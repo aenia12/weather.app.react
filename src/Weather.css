@@ -17,10 +17,4 @@ p {
   display: block;
 }
 
-#city:first-letter {
-  text-transform: capitalize;
-}
 
-#description:first-letter {
-  text-transform: capitalize;
-}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Weather.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Weather() {
   return (
@@ -8,27 +9,22 @@ export default function Weather() {
         <span className="cities float-right">
           Chicago Tokyo Madrid Istanbul London
         </span>
-
         <br />
         <div className="d-flex justify-content-center w-100">
-          <form id="search-form" className="d-flex align-items-center">
+          <form className="d-flex align-items-center">
             <input
               type="text"
               placeholder="City"
               className="cities"
               autoComplete="off"
               autofocus="on"
-              id="city-input"
             />
             <input
               type="submit"
               value="Search"
               className="search btn btn-primary"
-              id="search-button"
             />
-            <button className="btn btn-success" id="current-button">
-              Current
-            </button>
+            <button className="btn btn-success">Current</button>
           </form>
         </div>
       </div>
@@ -36,13 +32,11 @@ export default function Weather() {
       <div className="row">
         <div className="col-6">
           <p>
-            <span id="city">Nashville, TN</span>
+            <span>Nashville, TN</span>
             <br />
-            Last updated: <span id="currentTime"></span>
+            Last updated: <span></span>
             <br />
-            <span className="description" id="description">
-              {" "}
-            </span>
+            <span className="description"> </span>
             <img
               src="http://openweathermap.org/img/wn/01d@2x.png"
               alt="sunny"
@@ -50,11 +44,11 @@ export default function Weather() {
               className="float-left"
             />
             <span id="current-temperature"> 79°F </span>
-            <a href="#" className="active" id="celsius-link">
+            <a href="#" className="active">
               °C
             </a>{" "}
             |
-            <a href="#" className="" id="fahrenheit-link">
+            <a href="#" className="">
               °F
             </a>
           </p>
@@ -63,16 +57,10 @@ export default function Weather() {
           <p>
             Feels like: 80°F
             <br />
-            Humidity:{" "}
-            <span className="humidity" id="humidity">
-              {" "}
-            </span>
+            Humidity: <span className="humidity"> </span>
             %
             <br />
-            Wind:{" "}
-            <span className="wind" id="wind">
-              {" "}
-            </span>
+            Wind: <span className="wind"> </span>
             mph
           </p>
         </div>
@@ -128,7 +116,7 @@ export default function Weather() {
       >
         Open-sourced on Github
       </a>
-      by Aenia Amin
+      {""}by Aenia Amin
       <script src="app.js"></script>
     </div>
   );
