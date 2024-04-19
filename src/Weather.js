@@ -44,11 +44,11 @@ export default function Weather() {
               className="float-left"
             />
             <span id="current-temperature"> 79°F </span>
-            <a href="#" className="active">
+            <a href="null" className="active">
               °C
             </a>{" "}
             |
-            <a href="#" className="">
+            <a href="null" className="">
               °F
             </a>
           </p>
@@ -114,7 +114,7 @@ export default function Weather() {
         target="_blank"
         rel="noreferrer"
       >
-        Open-sourced on Github
+        Open-sourced on Github{""}
       </a>
       {""}by Aenia Amin
       <script src="app.js"></script>
