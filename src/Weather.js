@@ -110,13 +110,13 @@ export default function Weather() {
         </div>
       </div>
       <a
-        href="https://github.com/aenia12/Plus.Amin.WeatherApp"
+        href="https://github.com/aenia12/weather.app.react"
         target="_blank"
         rel="noreferrer"
       >
-        Open-sourced on Github{""}
-      </a>
-      {""}by Aenia Amin
+        Open-sourced on Github{" "}
+      </a>{" "}
+      by Aenia Amin
       <script src="app.js"></script>
     </div>
   );
